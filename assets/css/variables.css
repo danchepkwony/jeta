@@ -1,0 +1,17 @@
+:root{
+    --green: #3AB54B;
+    --yellow-green: #8DC73F;
+    --yellow: #D6DF1F;
+    --gray: #E3E3E3;
+    --light-gray: #f6f6f6;
+    --off-black: #002A3A;
+    --light-red: #FFD6D6;
+    --red: #8A0A0A;
+    --success-green: #DEFFD6;
+    --success-dark-green: #0F5309;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+}

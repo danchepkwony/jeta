@@ -1,0 +1,95 @@
+.donate-page .banner{
+    margin-top: 10px;
+    height: 300px;
+}
+
+.donate-page section{
+    margin: 40px;
+}
+
+.donate-page h1{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.donate-page p{
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.donate-page a{
+    cursor: pointer;
+}
+
+/* Buttons */
+
+.donate-page .donate-buttons{
+    margin: auto 0;
+    font-size: 1em;
+}
+
+.donate-page .donate-buttons a{
+    justify-content: center;
+    margin: auto;
+}
+
+.donate-page .button-donate a{
+    background: var(--green);
+}
+
+.donate-page .button-paypal a{
+    background: #F6C657
+}
+
+.donate-page .donate-buttons a img{
+    margin: auto;
+    display: block;
+    width: 100px;
+}
+
+.donate-page .button-donate a{
+    margin-bottom: 30px;
+}
+
+/* Desktop Only */
+
+@media (min-width: 768px){
+    .donate-page .donate-text{
+        font-size: 1.5em
+    }
+    
+    .donate-page .donate-buttons{
+        font-size: 1.5em
+    }
+
+    .donate-page h1{
+        margin-bottom: 30px;
+    }
+
+    .donate-page .donate-buttons a img{
+        width: 150px;
+    }
+}
+
+@media (min-width: 1000px){
+    .donate-page{
+        min-height: calc(100vh - 58px - 55px);
+    }
+
+    .donate-page section{
+        display: flex;
+        justify-content: space-between;
+        margin: 80px auto;
+        width: 90%;
+    }
+
+    .donate-page .donate-text, .donate-page .donate-buttons{
+        width: 48%;
+    }
+
+    .donate-page .donate-buttons a{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 400px;
+    }
+}

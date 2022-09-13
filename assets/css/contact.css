@@ -1,0 +1,85 @@
+.contact{
+    max-width: 2000px;
+    margin: 20px 10px 0 10px;
+    min-height: calc(100vh - 113px);
+}
+
+.contact .text{
+    margin: 0 10px 30px 10px;
+    padding: 50px 50px 10px 50px;
+    min-height: 390px;
+    border: 1px var(--gray) solid;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.contact .text h1{
+    margin-bottom: 40px;
+    padding: 10px 0;
+    border-bottom: 5px var(--green) solid;
+    text-align: center;
+    font-size: 2em;
+}
+
+.contact .text > div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact .text > div > img{
+    width: 36px;
+}
+
+.contact .text > div > span{
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.contact .map{
+    height: auto;
+    margin: 0 10px 40px 10px;
+}
+
+.contact .map iframe{
+    width: 100%;
+}
+
+/* Small Mobile Only */
+
+@media (max-width: 375px){
+    .contact .text{
+        font-size: .75em;
+    }
+}
+
+/* Desktop Only */
+
+@media (min-width: 768px){
+    .contact{
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .text, .contact .map{
+        width: 80%;
+    }
+
+    .contact .text{
+        max-width: 400px;
+    }
+
+    .contact .text h1{
+        font-size: 3em;
+    }
+
+}
+
+@media (min-width: 1400px){
+    .contact{
+        max-width: 1375px;
+        margin: auto;
+    }
+}

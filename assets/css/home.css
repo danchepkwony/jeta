@@ -1,0 +1,237 @@
+.home{
+    margin-top: 10px;
+    overflow-x: hidden;
+}
+
+/* Banner */
+
+.home .banner{
+    height: 400px;
+}
+
+.home .banner .div{
+    top: calc(50% - 10px);
+}
+
+.home .banner h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home .banner a{
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+/* Programs (Program tiles defined in programs.css) */ 
+
+.home .programs{
+    margin: 10px 10px 0 10px;
+}
+
+.home .programs h1, .home .about h1{
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.home .programs h1{
+    text-align: center;
+}
+
+.home .programs .link-button{
+    background: var(--off-black);
+}
+
+.home .programs .link-button:hover{
+	-webkit-filter: brightness(1.5);
+	        filter: brightness(1.5);
+	transition: -webkit-filter .25s ease;
+	transition: filter .25s ease;
+	transition: filter .25s ease, -webkit-filter .25s ease;
+}
+
+/* About */
+
+.home .instagram, .home .facebook, .home .about{
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.home .about h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.home .about p{
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.home .about img{
+    width: 100%;
+}
+
+.home .about .link-button{
+    margin-bottom: 20px;
+    background-color: var(--green);
+}
+
+/* Desktop Only */
+
+@media (min-width: 768px){
+    
+    /* Banner */
+
+    .home .banner{
+        height: 500px;
+    }
+
+    .home .banner h1{
+        margin-bottom: 30px;
+    }
+
+    .home .banner a{
+        padding: 10px 30px;
+        font-size: 1.2em;
+    }
+
+    /* Programs */
+
+    .home .programs{
+        margin: 10px 40px 0 40px;
+    }
+
+    .home .programs h1{
+        font-size: 2em;
+        margin: 30px 0;
+    }
+
+    .home .programs h1, .home .programs .time, .home .programs .address{
+        padding: 0 10px;
+    }    
+
+    .home .programs .link-button{
+        margin-left: auto;
+        padding: 10px 30px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .home .programs ol{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: calc(1% + 10px);
+    }
+
+    .home .program{
+        position: relative;
+        padding: 0;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        transition: border .2s ease;
+    }
+
+    .home .program:hover{
+        border: 1px var(--green) solid;
+        transition: border .2s ease;
+    }
+
+    .home .programs .program-date{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px 10px;
+        background: white;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .home .programs .program-info{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home .program-info .image-container{
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .home .programs img{  
+        display: inherit;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+
+    .home .instagram{
+        margin: 30px;
+    }
+
+    .home .facebook{
+        margin: 40px;
+    }
+
+    /* About */
+
+    .home .about{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px;
+        font-size: 1.1em;
+    }
+
+    .home .about div{
+        width: 48%;
+    }
+
+    .home .about h1{
+        text-align: left;
+    }
+
+    .home .about p{
+        font-size: .9em;
+    }
+
+    .home .about .link-button{
+        padding: 10px 30px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .home .about .text-container, .home .about .img-container{
+        width: 45%;
+    }
+
+    .home .about .img-container{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    .home .about img{
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+}
+
+@media (min-width: 1000px){
+    .home .about p{
+        font-size: 1.25em;
+    }
+
+    .home .about h1{
+        font-size: 1.75em;
+    }
+}

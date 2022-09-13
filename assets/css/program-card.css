@@ -1,0 +1,80 @@
+.program{
+    position: relative;
+    padding: 30px 0;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray);
+    transition: background-color .25s ease;
+}
+
+.program-date{
+    text-align: center;
+    min-width: 5ch;
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+
+.program-date .program-date-number{
+    font-size: 1.25em;
+    display: block;
+    text-align: center;
+}
+
+.program-info{
+    margin-right: 30px;
+    padding: 0 20px;
+    border-left: 1px solid var(--gray);
+}
+
+.program-info .image-container, .program-info img{
+    display: none;
+}
+
+.program-info h2{
+    margin: 0;
+    font-weight: 100;
+}
+
+.program-info .time{
+    margin: 10px 0;
+}
+
+.program-info .address{
+    font-size: .9em;
+}
+
+.program .register{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background: var(--green);
+}
+
+.program .register img{
+    width: 100%;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}
+
+/* Desktop Only */
+
+@media (min-width: 768px){
+    .program .register{
+        opacity: 0;
+        width: 100%;
+    }
+
+    .selected{
+        border-right: 10px var(--green) solid;
+    }
+    
+    .program{
+        cursor: pointer;
+    }
+}

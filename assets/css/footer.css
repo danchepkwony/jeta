@@ -1,0 +1,35 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--off-black);
+    color: white;
+}
+
+.footer .links{
+    display: flex;
+}
+
+.footer .links a{
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+.footer .links a img{
+    width: 100%;
+}
+
+/* Desktop Only */
+
+@media (min-width: 768px){
+    .footer{
+        padding: 15px 50px;
+        font-size: 1.3em;
+    }
+
+    .footer .links a{
+        margin-left: 24px;
+    }
+}

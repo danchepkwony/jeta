@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap');
+@import "variables.css";
+@import "header.css";
+@import "home.css";
+@import "about.css";
+@import "donate.css";
+@import "program-card.css";
+@import "programs.css";
+@import "contact.css";
+@import "404.css";
+@import "footer.css";
+
+body{
+    color: #4A4A4A;
+    font-family: "Montserrat", sans-serif;
+}
+
+.link-button{
+    text-decoration: none;
+    padding: 10px 20px;
+	transition: -webkit-filter .25s ease;
+	transition: filter .25s ease;
+	transition: filter .25s ease, -webkit-filter .25s ease;
+}
+
+.link-button:hover{
+	-webkit-filter: brightness(1.1);
+	        filter: brightness(1.1);
+	transition: -webkit-filter .25s ease;
+	transition: filter .25s ease;
+	transition: filter .25s ease, -webkit-filter .25s ease;
+}
+
+.wide-link-button{
+	display: block;
+    text-align: center;
+    color: white;
+    margin: auto 0;
+	font-size: 1.25em;
+    margin-top: 20px;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(1) brightness(0.4);
+            filter: grayscale(1) brightness(0.4);
+}
+
+.banner div{
+    position: absolute;
+    top: calc(50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.banner h1{
+    margin: 0;
+    font-size: 1.3em;
+	text-transform: uppercase;
+}
+
+.banner a{
+    color: white;
+    background-color: var(--green);
+}
+
+@media (min-width: 400px){
+    .banner h1{
+		font-size: 1.75em;
+	}
+}
+
+/* Desktop Only */
+
+@media (min-width: 768px){
+    .banner h1{
+		font-size: 3em;
+	}
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	        clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	position: absolute !important;
+	word-wrap: normal !important;
+}
+
+[lang="en"]{
+    display: none;
+}
+
+/* Max Width */
+
+@media (min-width: 1400px){
+    .home .programs, .home .about, .home .instagram, .donate-page section, .program-page{
+		max-width: 1375px;
+        margin-right: auto;
+        margin-left: auto;
+	}
+}
+
+/* Instagram Plugin Styling */
+
+.sbi_follow_btn a, .sbi_load_btn{
+    margin: 0 !important;
+    padding: 10px 20px !important;
+    border-radius: 0 !important;
+    font-size: 1.25em !important;
+}
+
